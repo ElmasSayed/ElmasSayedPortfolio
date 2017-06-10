@@ -1,0 +1,66 @@
+<style>
+    #outerbox {
+        width: 700px;
+        overflow: hidden;
+    }
+
+    #sliderbox {
+        position: relative;
+        width: 3500px;
+        /*image width * by total # of images*/
+        animation-name: kfSliderBox;
+        animation-duration: 25s;
+        /*4s pause + 1s to slide * by total # of images*/
+        animation-iteration-count: infinite;
+    }
+
+    #sliderbox img {
+        float: left;
+    }
+
+    @keyframes kfSliderBox {
+        0% {
+            left: 0px;
+        }
+        16% {
+            left: 0px;
+        }
+        20% {
+            left: -700px;
+        }
+        36% {
+            left: -700px;
+        }
+        40% {
+            left: -1400px;
+        }
+        56% {
+            left: -1400px;
+        }
+        60% {
+            left: -2100px;
+        }
+        76% {
+            left: -2100px;
+        }
+        80% {
+            left: -2800px;
+        }
+        96% {
+            left: -2800px;
+        }
+        100% {
+            left: -3500px;
+        }
+    }    
+</style>
+
+<div id='outerbox'>
+    <div id='sliderbox'>
+        <img src='img/slider/1.jpg'>
+        <img src='img/slider/2.jpg'>
+        <img src='img/slider/3.jpg'>
+        <img src='img/slider/4.jpg'>
+        <img src='img/slider/5.jpg'>
+    </div>
+</div>
